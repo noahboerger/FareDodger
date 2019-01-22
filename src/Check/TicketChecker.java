@@ -23,21 +23,24 @@ public class TicketChecker implements ITicketChecker {
 
     }
 
-    public void checkPassenger(Passenger passenger) {
+    public boolean checkPassenger(Passenger passenger) {
+        checkedTickets++;
         if (passenger.getTicket() == null) {
             int fee = passenger.dodgeFare();
             System.out.println("TICKETCHECKER: " + passenger.getName() + " has no ticket! Fee: " + fee + "€ \n");
             fareDodger++;
+            return false;
         } else {
             if (checkTicket(passenger)) {
                 System.out.println("TICKETCHECKER: " + passenger.getName() + " has a valid ticket! \n");
+                return true;
             } else {
                 int fee = passenger.dodgeFare();
                 System.out.println("TICKETCHECKER: " + passenger.getName() + " has no valid ticket! Fee: " + fee + "€ \n");
                 fareDodger++;
+                return false;
             }
         }
-        checkedTickets++;
     }
 
     private boolean checkTicket(Passenger passenger) {

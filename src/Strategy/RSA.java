@@ -13,7 +13,7 @@ public class RSA implements ISecurityStrategy {
         generateKeys();
     }
 
-    public synchronized void generateKeys() {
+    private synchronized void generateKeys() {
         SecureRandom r = new SecureRandom();
         BigInteger p = new BigInteger(bitlen / 2, 100, r);
         BigInteger q = new BigInteger(bitlen / 2, 100, r);
