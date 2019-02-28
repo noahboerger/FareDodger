@@ -1,9 +1,9 @@
-package Check;
+package check;
 
-import Base.Passenger;
-import Base.Ticket;
-import Base.TicketChip;
-import Base.Zone;
+import base.Passenger;
+import base.Ticket;
+import base.TicketChip;
+import base.Zone;
 
 import java.util.Date;
 

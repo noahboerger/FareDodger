@@ -1,4 +1,4 @@
-package Check;
+package base;
 
 public enum ArrestDuration {
     WEEK, MONTH, YEAR;

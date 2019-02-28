@@ -1,7 +1,7 @@
-package State;
+package state;
 
 
-import Base.Passenger;
+import base.Passenger;
 
 public interface IState {
     int dodgeFare(Passenger passenger);

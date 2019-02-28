@@ -1,9 +1,6 @@
-package State;
+package state;
 
-import Base.Passenger;
-import Check.IPoliceListener;
-
-import java.util.List;
+import base.Passenger;
 
 public class S0 implements IState {
 

@@ -1,4 +1,4 @@
-package Base;
+package base;
 
 public enum Zone {
     INNENRAUM(1), AUSSENRAUM(2), XXL(3);

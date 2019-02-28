@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public interface ISecurityStrategy {
     String encrypt(String message);

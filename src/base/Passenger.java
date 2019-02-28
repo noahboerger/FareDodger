@@ -1,7 +1,7 @@
-package Base;
+package base;
 
-import State.IState;
-import State.S0;
+import state.IState;
+import state.S0;
 
 public class Passenger {
     private IState state;

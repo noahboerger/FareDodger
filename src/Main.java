@@ -1,17 +1,15 @@
-import Base.Passenger;
-import Base.Utils;
-import Base.Zone;
-import Check.TicketChecker;
+import base.Passenger;
+import base.Utils;
+import base.Zone;
+import check.TicketChecker;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Main {
 
-    private static Random random = new Random();
-
-    public static void main(String args[]) {
+    //Observer Pattern als viertes Pattern zusätzlich hinzugefügt
+    public static void main(String[] args) {
         TicketChecker ticketCheckerINNEN = new TicketChecker("Kontrollöres Innenraum", Zone.INNENRAUM);
         TicketChecker ticketCheckerAUSSEN = new TicketChecker("Kontrollöres Aussenraum", Zone.AUSSENRAUM);
         TicketChecker ticketCheckerXXL = new TicketChecker("Kontrollöres XXL", Zone.XXL);

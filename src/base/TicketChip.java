@@ -1,8 +1,8 @@
-package Base;
+package base;
 
-import Strategy.AES;
-import Strategy.ISecurityStrategy;
-import Strategy.RSA;
+import strategy.AES;
+import strategy.ISecurityStrategy;
+import strategy.RSA;
 
 import java.util.Date;
 

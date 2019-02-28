@@ -1,6 +1,6 @@
-package Check;
+package check;
 
-import Base.Passenger;
+import base.Passenger;
 
 public interface ITicketChecker {
     boolean checkPassenger(Passenger passenger);

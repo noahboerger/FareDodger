@@ -1,10 +1,10 @@
-package State;
+package state;
 
-import Base.Passenger;
-import Check.IPoliceListener;
-import Check.Police;
-
-import java.util.List;
+import base.Passenger;
+import check.IPoliceListener;
+import check.Police;
+import command.ICommand;
+import command.InformCommand;
 
 public class S1 implements IState {
 
@@ -19,7 +19,8 @@ public class S1 implements IState {
     @Override
     public int dodgeFare(Passenger passenger) {
         dodgeFareCounter++;
-        listener.receiveFareDodger(passenger);
+        ICommand informCommand = new InformCommand(passenger);
+        listener.receive(informCommand);
         switch (dodgeFareCounter) {
             case 1:
                 return 80;
